@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title> Formulario Web Visita Turistica</title>
+</head>
+
+<body>
+    <center>
+    <h2>Formulario para Visitas Turisticas al</h1>
+    <h1>Volcan Cotopaxi</h1>
+    </center>
+<img src="https://www.goecuadortravel.com/archivos/destinos/cotopaxi-1200x600-1_Mediano.jpg" alt="volcancotopaxialternatetext" width="950">
+
+<p><h2>Complete las siguientes preguntas para su visita</h2></p>
+
+<form>
+
+    <label><h3>1. Cual es su nombre ?</h3></label>
+    <input type="text" name="nombrecliente">
+    <label><h3>2. Cuantas personas lo acompanian ?</h3></label>
+    <input type="number" name="numeroacomp" min="0">
+    <label><h3>3. En que fecha realizara su visita ?</h3></label>
+    <input type="date" name="fechavisita">
+    <label><h3>4. Es su primera visita al Volcan Cotopaxi ?</h3></label>
+    <input type="radio" id="Si" name="visito" value="Si">
+    <label for="Si">Si</label><br>
+    <input type="radio" id="No" name="visito" value="No">
+    <label for="No">No</label><br>
+    <label><h3>5. Que actividades desea realizar ?</h3></label>
+    <input type="checkbox" id="actividad1" name="actividad1" value="Senderismo">
+    <label for="actividad1">Senderismo</label><br>
+    <input type="checkbox" id="actividad2" name="actividad2" value="Fotografia">
+    <label for="actividad2">Fotografia</label><br>
+    <input type="checkbox" id="actividad3" name="actividad3" value="Ciclismo">
+    <label for="actividad3">Ciclismo</label><br>
+    <input type="checkbox" id="actividad4" name="actividad4" value="Observacion">
+    <label for="actividad4">Observacion de la Naturaleza</label><br>
+    <label><h3>6. Cual es su lugar de precedencia ?</h3></label>
+    <select id="Pais" name="Pais">
+        <option value="Quito">Quito</option>
+        <option value="Latacunga">Latacunga</option>
+        <option value="Otra ciudad del Ecuador">Otra ciudad del Ecuador</option>
+        <option value="Extranjero">Otro Pais</option>
+    </select>
+    <br>
+    <label for="email"><h3>7. Escriba su email de contacto:</h3></label>
+    <input type="email" id="email" name="email">
+    <label for="phone"><h3>8. Escriba su telefono de contacto:</h3></label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}">
+    <label><h3>9. Mensaje de consientizacion:</h3></label>
+    <input type="button" oneclick="alert('Cuida el medio ambiente')" value="Consientizacion">
+    <label><h3>10. Escriba sus recomendaciones para mejorar la atencion</h3></label>
+    <textarea name="Recomendaciones" rows="10" cols="50">
+    </textarea><br>
+    <input type="submit" value="Enviar">
+</form>
+</body>
+
+</html>
